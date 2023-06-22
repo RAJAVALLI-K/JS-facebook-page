@@ -1,0 +1,15 @@
+@import url("signup.css");
+@import url("login.css");
+@import url("home.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    background-color: white;
+    font-family: "Roboto";
+}

@@ -1,0 +1,110 @@
+h1 {
+    color: #1877f2;
+    font-size: 51px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 75%;
+}
+
+form div {
+    margin: 7px 0px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #b3b2b2;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+    border-bottom: 2px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button a ,button a:hover{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.green-color {
+    background-color: #42b72a;
+}
+
+.g-btn button {
+    width: 100%;
+}
+
+.blue-color {
+    background-color: #1877f2;
+}
+
+.forgot {
+    padding: 10px 0px;
+    text-align: center;
+    color: #1877f2;
+}
+
+.hover:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 15px 10px;
+}
+
+.color {
+    color: black;
+    font-weight: 600;
+}
+
+.p-tag {
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.error8,.error9{
+    position: absolute;
+    height: 100%;
+    display: none;
+    font-size: 16px;
+    color: #b94a48;
+    top: 10px;
+    right: 10px;
+}
+
