@@ -1,5 +1,5 @@
 .main-div div {
-    margin:7px 0px;
+    margin: 7px 0px;
 }
 
 input,
@@ -25,14 +25,12 @@ input {
     font-size: 14px;
 }
 
-input::placeholder ,select{
+input::placeholder,
+select {
     color: #606770;
 }
 
-.contain {
-    width: 40%;
-    margin: auto;
-}
+
 
 .rows {
     padding: 30px 0px !important;
@@ -66,11 +64,12 @@ input::placeholder ,select{
 
 .radio {
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     border: 1px solid #ccc;
-    padding: 10px 10px;
+    padding: 10px 2px;
     border-radius: 5px;
     margin: 0 !important;
+    font-size: 14px;
 }
 
 .radio label {
@@ -107,7 +106,10 @@ input:active {
     text-decoration: underline;
 }
 
-.error2,.error3,.error4,.error1 {
+.error2,
+.error3,
+.error4,
+.error1 {
     position: absolute;
     height: 100%;
     top: 12px;
@@ -116,6 +118,7 @@ input:active {
     font-size: 16px;
     color: #b94a48;
 }
+
 /* .error1{
     position: absolute;
     height: 100%;
@@ -136,11 +139,12 @@ input:active {
 }
 
 
-.position,.log-err{
+.position,
+.log-err {
     position: relative;
 }
 
-.user-error{
+.user-error {
     font-size: 15px;
     color: red;
     text-align: center;
@@ -148,6 +152,71 @@ input:active {
     display: none;
 }
 
-.names div{
+.names div {
     margin: 0;
+}
+
+
+@media only screen and (min-width:200px) {
+    .contain {
+        width: 100%;
+        margin: auto;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .error2 {
+        top: 53px;
+        right: 13px;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    .contain {
+        width: 100%;
+        margin: auto;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .error2 {
+        top: 53px;
+        right: 13px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .contain {
+        width: 50%;
+        margin: auto;
+    }
+
+    .names {
+        flex-direction: row;
+    }
+
+    .error2 {
+        top: 12px;
+        right: 13px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .contain {
+        width: 40%;
+        margin: auto;
+    }
+
+    .names {
+        flex-direction: row;
+    }
+
+    .error2 {
+        top: 12px;
+        right: 13px;
+    }
 }

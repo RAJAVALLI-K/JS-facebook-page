@@ -100,53 +100,7 @@ nav ul li a img {
     margin-left: 8px;
 }
 
-@media only screen and (min-width:320px) {
-    .container-fluid {
-        display: flex;
-        flex-wrap: nowrap !important;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    a.navbar-brand {
-        width: 21% !important;
-    }
-
-    .search-bar {
-        margin-left: 0rem !important;
-    }
-}
-
-@media only screen and (min-width:768px) {
-    .container-fluid {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .search-bar {
-        margin-left: 0rem !important;
-    }
-
-}
-
-@media only screen and (min-width:1024px) {
-    .container-fluid {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    a.navbar-brand {
-        width: 9% !important;
-    }
-
-    .search-bar {
-        margin-left: 20rem !important;
-    }
-}
 
 .settings i,
 .help i,
@@ -292,11 +246,11 @@ a.logout:hover {
 }
 
 .left-side .short-img img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
-    /* margin: 8px 15px 8px 0; */
-    padding: 5px 10px;
+    margin: 8px 15px 8px 0;
+    /* padding: 5px 10px; */
 }
 
 .right-side {
@@ -437,4 +391,130 @@ i.fa-solid.fa-thumbs-up {
 
 .edit-delete {
     cursor: pointer;
+}
+
+
+
+@media only screen and (min-width:200px) {
+    .container-fluid {
+        display: flex;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a.navbar-brand {
+        width: 21% !important;
+    }
+
+    .search-bar {
+        margin-left: 0rem !important;
+    }
+
+    .right-side,
+    div#post-tray {
+        margin-left: 39%;
+    }
+
+    .post-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .post-icon {
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    .container-fluid {
+        display: flex;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a.navbar-brand {
+        width: 21% !important;
+    }
+
+    .search-bar {
+        margin-left: 0rem !important;
+    }
+
+    .right-side,
+    div#post-tray {
+        margin-left: 39%;
+    }
+
+    .post-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .post-icon {
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-bar {
+        margin-left: 0rem !important;
+    }
+
+    .right-side,
+    div#post-tray {
+        margin-left: 2%;
+    }
+
+    .post-bottom {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .post-icon {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a.navbar-brand {
+        width: 9% !important;
+    }
+
+    .search-bar {
+        margin-left: 20rem !important;
+    }
+
+    .right-side,
+    div#post-tray {
+        margin-left: 2%;
+    }
+
+    .post-bottom {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .post-icon {
+        margin: auto;
+    }
 }
