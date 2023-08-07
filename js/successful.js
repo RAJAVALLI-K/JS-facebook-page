@@ -1,9 +1,18 @@
 //options-toogle
+
 let options = document.getElementById("profile-options");
 
 options.addEventListener("click", function () {
     let optionList = document.getElementById("options-list");
     optionList.classList.toggle("active-options");
+
+})
+
+let options1 = document.getElementById("profile-options1");
+
+options1.addEventListener("click", function () {
+    let optionList1 = document.getElementById("options-list1");
+    optionList1.classList.toggle("active-options");
 
 })
 
@@ -15,7 +24,14 @@ logoutBtn.addEventListener("click", function () {
     location.href = "index.html";
 })
 
+let logoutBtn1 = document.getElementsByClassName("log-out1")[0];
+
+logoutBtn1.addEventListener("click", function () {
+    location.href = "index.html";
+})
+
 //post update
+
 var postBtn = document.getElementById("post");
 var postTray = document.getElementById("post-tray");
 
@@ -28,21 +44,21 @@ postBtn.addEventListener("click", function () {
     innerDiv.classList.add("inner-div");
     innerDiv.innerHTML =
         `<span id="task-names">
-                    ${postInput}
-                </span>
-                <div class="reactions">
-                    <div>
-                        <i class="fa-solid fa-thumbs-up" style="color: #fff;"></i>
-                        <i class="fa-solid fa-heart" style="color: #fff;"></i>
-                    </div>
-                    <div class="edit-delete">
-                        <i class="fa-solid fa-pen-to-square edit-post" onClick="edit(this)" style="color: #919191;"></i>
-                        <i class="fa-solid fa-trash delete" style="color: #919191;" onClick="remove(this)"></i>
-                        <div>
-                            <p style="color: #919191; font-size:14px;">${time}</p>
-                        </div>
-                    </div>
-                </div> `;
+            ${postInput}
+        </span>
+        <div class="reactions">
+            <div>
+                <i class="fa-solid fa-thumbs-up" style="color: #fff;"></i>
+                <i class="fa-solid fa-heart" style="color: #fff;"></i>
+            </div>
+            <div class="edit-delete">
+                <i class="fa-solid fa-pen-to-square edit-post" onClick="edit(this)" style="color: #919191;"></i>
+                <i class="fa-solid fa-trash delete" style="color: #919191;" onClick="remove(this)"></i>
+                <div>
+                    <p style="color: #919191; font-size:14px;">${time}</p>
+                </div>
+            </div>
+        </div> `;
     postTray.appendChild(innerDiv);
 
     let del = document.querySelectorAll(".delete");
@@ -69,3 +85,9 @@ postBtn.addEventListener("click", function () {
 
 })
 
+// toggle
+
+let toggleBtn = document.querySelector('#nave-bar');
+function btn() {
+    toggleBtn.classList.toggle('nav');
+}
